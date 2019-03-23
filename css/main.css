@@ -294,7 +294,7 @@ footer .container
 footer .container h4,li{
     color: #fff;
     list-style: none;
-    padding: 20px;
+    padding: 17px;
 }
 footer .container h4{
     font-size: 20px;
@@ -305,7 +305,7 @@ footer .container {
 }
 footer .container ul{
     display: flex;
-    padding: 20px;
+    padding: 0px;
     margin-left: auto;
 }
 footer .container ul li span
