@@ -536,6 +536,9 @@ footer .container ul li span
     .story h5{
         margin: 7px 42px;
     }
+    .story p{
+        margin-left: 0px;
+    }
 }
 @media screen and (max-width:768px){
     .skillbar-section {
@@ -559,7 +562,20 @@ footer .container ul li span
         height: 85vh;
         margin: -100px 61px;
     }
+    .story h5 {
+        margin: 7px 23px;
+        text-align: center;
+    }
+    .story p {
+        margin-left: -19px;
+    }
     .footer{
         width: 141%;
     }
+}
+
+@media screen and (max-width:320px){
+    footer{
+        width: 117%;
+    } 
 }
