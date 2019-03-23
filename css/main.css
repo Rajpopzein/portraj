@@ -41,6 +41,7 @@ body{
     text-transform: capitalize;
     margin-left: 20px;
     color: #ffff;
+
 }
 .navbar nav ul li a:hover{
     color: #ef8754;
@@ -238,11 +239,11 @@ body{
     transition: 0.5s;
 }
 .grid-1:hover img{
-    opacity: 0.1;
+    opacity: 1;
 }
 .card-text{
     position: absolute;
-    bottom: 500px;
+    bottom: -500px;
     width: 100%;
     padding: 20px;
     text-align: center;
@@ -431,8 +432,8 @@ footer .container ul li span
     }
     #text,.header-text
     {
-        top: 278px;
-        max-width: 504px;
+        top: 265px;
+        max-width: 529px;
         left: 15%;
     }
     .header-text
@@ -477,6 +478,11 @@ footer .container ul li span
         left: 12%;
         top: 230px;
         width: 200px;
+    }
+    .con-list
+    {
+        flex-direction: column;
+        margin-left: -15px;
     }
 }
 @media only screen and (max-width:375px){
@@ -528,6 +534,11 @@ footer .container ul li span
 {
     height: 250px;
 }
+.con-list
+{
+    flex-direction: column;
+    margin-left: -15px;
+}
 }
 @media screen and (max-width:425px){
     .skillbar-section {
@@ -538,6 +549,11 @@ footer .container ul li span
     }
     .story p{
         margin-left: 0px;
+    }
+    .con-list
+    {
+        flex-direction: column;
+        margin-left: -15px;
     }
 }
 @media screen and (max-width:768px){
