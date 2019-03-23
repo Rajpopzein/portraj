@@ -277,6 +277,14 @@ body{
 .con-list li:hover{
     background-color: #97c1da;
 }
+.con-list li a
+{
+    font-family: 'roboto',sans-serif;
+}
+.card-text h1
+{
+    font-family: 'roboto',sans-serif;
+}
 /*footer*/
 footer
 {
