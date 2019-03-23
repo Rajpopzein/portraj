@@ -401,6 +401,21 @@ footer .container ul li span
 {
     margin: auto;
 }
+.story h2 {
+    font-family: 'roboto',sans-serif;
+    font-size: 36px;
+    color: #000000;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-left: 0px;
+}
+.story p {
+    text-align: center;
+}
+.skillbar-section {
+    margin-left: 109px;
+}
 }
 
 @media screen and (max-width:900px){
@@ -507,4 +522,34 @@ footer .container ul li span
 {
     height: 250px;
 }
+}
+@media screen and (max-width:425px){
+    .skillbar-section {
+        margin-left: 0;
+    }
+}
+@media screen and (max-width:768px){
+    .skillbar-section {
+        margin-left: 75px;
+    }
+}
+@media screen and (max-width:375px){
+    .story {
+        width: 96vw;
+        margin: 10px 85px;
+    }
+    .skill .container {
+        margin-left: 22px;
+        padding: 0px;
+        width: 128%;
+        margin-top: 77px;
+    }
+    .portfolio-container {
+        width: 100%;
+        height: 85vh;
+        margin: -100px 61px;
+    }
+    .footer{
+        width: 141%;
+    }
 }
