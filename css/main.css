@@ -384,6 +384,12 @@ footer .container ul li span
     width: 100%;
     margin-top: 10px;
 }
+.story h2{
+    margin-left: -18px;
+}
+.story h5{
+    margin: 16px 178px;
+}
 .content{
     width: 108.8%;
     height: 900px;
@@ -527,11 +533,15 @@ footer .container ul li span
     .skillbar-section {
         margin-left: 0;
     }
+    .story h5{
+        margin: 7px 42px;
+    }
 }
 @media screen and (max-width:768px){
     .skillbar-section {
         margin-left: 75px;
     }
+
 }
 @media screen and (max-width:375px){
     .story {
