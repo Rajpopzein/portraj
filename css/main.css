@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen|Sniglet');
+/*font-family: 'Sniglet', cursive;
+font-family: 'Oxygen', sans-serif;*/
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+*,*::after,*::before{
+    box-sizing: border-box;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.navbar
+{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 1;
+}
+.navbar nav ul{
+    list-style: none;
+    float: right;
+}
+.navbar nav ul li{
+    display: inline;
+    padding: 20px;
+}
+.navbar nav ul li a{
+    text-decoration:none;
+    color: #ffff;
+    text-transform: capitalize;
+    font-size: 20px;
+
+}
+
+.logo
+{
+    float: left;
+    text-transform: capitalize;
+    margin-left: 20px;
+    color: #ffff;
+}
+.navbar nav ul li a:hover{
+    color: #ef8754;
+}
+.header img
+{
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+
+}
+#text,.header-text
+{
+    position: absolute;
+    top:280px;
+    left:42%;
+    width: 550px;
+    z-index: 1;
+    color: #ffff;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 50px;
+}
+.header-text{
+    top: 325px;
+    
+}
+.header-text p{
+    font-size: 17px;
+    font-family: 'Sniglet', cursive
+}
+.toggler
+{
+    color: #ffff;
+    width: 100%;
+    text-align: right;
+    margin: 21px -38px;
+    display: none;
+}
+.nbr
+{
+    width: 100%;
+    height: 60px;
+}
+.black
+{
+    background-color: rgba(0, 0, 0, 0.644);
+}
+
+
+/*content section*/
+.content{
+    /*background-image: url(../source/image/abstract_smooth_wave_background_vector_grapihic_art_569579.jpg),linear-gradient(rgba(0, 0, 0, 0.897),rgba(0, 0, 0, 0.774));*/
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    margin-top: -5px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.story .container
+{
+    margin: 40px;
+    padding: 10px;
+}
+.story
+{
+    width: 50%;
+    float: left;
+}
+.story h2{
+    font-family: 'roboto',sans-serif;
+    font-size: 36px;
+    color: #000000;
+    /* text-align: center; */
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-left: 75px;
+    
+}
+.story h5{
+    font-family: 'roboto',sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: left;
+    margin: 16px 75px;
+    letter-spacing: 3px;
+
+}
+.story p{
+    font-family: 'roboto',sans-serif; 
+    font-size: 16px;
+    width: 400px;
+    color: rgb(100, 100, 100);
+    text-align: left;
+    word-spacing: 1.5px;
+    margin-left:70px; 
+    line-height: 1.5;
+}
+.skill .container
+{
+    margin: 40px;
+    padding: 10px;
+}
+.skill
+{
+    float: right;
+    width: 50%;
+}
+.skill-text h5{
+    margin-top: 18px;
+}
+.skill-bar-text-color
+{
+    color: rgba(26, 9, 180, 0.897);
+}
+.skillbar-text
+{
+    font-family: 'roboto',sans-serif; 
+    text-align: center;
+    font-size: 25px;
+    margin-top: 25px;
+}
+.skill-html
+{
+    width: 90%;
+    background-color:rgb(99, 98, 98);
+    height:3px;
+}
+.skill-css
+{
+    width: 80%;
+    background-color:rgb(99, 98, 98);
+    height:3px;
+}
+.skill-javascript
+{
+    width: 65%;
+    background-color:rgb(99, 98, 98);
+    height:3px;
+}
+.skill-jquery
+{
+    width: 60%;
+    background-color:rgb(99, 98, 98);
+    height:3px;
+}
+.skillbar-section h4
+{
+    text-transform: capitalize;
+    font-family: 'roboto',sans-serif;
+    margin-bottom: -17px;
+} 
+.skill-text h5
+{
+    padding: 4px;
+}
+.story,.skill{
+    margin-top: 80px;
+}
+
+
+/*portfolio content*/
+.portfolio-container
+{
+    width: 80%;
+    height: 85vh;
+    margin: -85px auto;
+
+}
+.portfolio-container h2{
+    font-family: 'roboto',sans-serif;
+    font-size: 35px;
+    font-weight: bolder;
+}
+.portfolio-container .grid-list
+{
+    display: flex;
+}
+.grid-1{
+    border: 2px solid rgba(59, 58, 58, 0.384);
+    height: 450px;
+    width: 90%;
+    margin: 0px auto;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+}
+.grid-1 img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.grid-1:hover img{
+    opacity: 0.1;
+}
+.card-text{
+    position: absolute;
+    bottom: 500px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+.grid-1:hover .card-text
+{
+    bottom: 0;
+}
+.grid-1:nth-child(1) .card-text{
+    background: linear-gradient(0deg, #1884c2, transparent);
+}
+.con-list
+{
+    list-style: none;
+    display: flex;
+}
+.con-list li a{
+    text-decoration: none;
+    padding: 30px;
+    color: #fff;
+}
+.con-list li{
+    margin: 20px;
+    border: 2px solid #000;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 5px;
+    background-color: #1884c2;
+}
+.con-list li:hover{
+    background-color: #97c1da;
+}
+/*footer*/
+footer
+{
+    position: relative;
+    width: 100%;
+    background-color: rgb(24, 24, 24);
+    height: 100px;
+    top: 100px;
+}
+footer .container
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+footer .container h4,li{
+    color: #fff;
+    list-style: none;
+    padding: 20px;
+}
+footer .container h4{
+    font-size: 20px;
+}
+footer .container {
+    display: flex;
+    justify-content: center;
+}
+footer .container ul{
+    display: flex;
+    padding: 20px;
+    margin-left: auto;
+}
+footer .container ul li span
+{
+    margin:0 10px;
+    color: #ef8754;
+    font-size: 20px;
+}
+
+/*media query*/
+@media only screen and (max-width:768px){
+ .toggler{
+     display: inline-block;
+ }
+ .navbar
+{
+    width: 100%;
+
+    z-index: 999;
+    
+}
+.navbar nav ul{
+    display: block;
+    width: 100%;
+    background-color: #000;
+    margin: 0;
+}
+ .navbar nav ul li{
+    display: none;
+    padding: 20px;
+    width: 100%;
+}
+.navbar nav ul li a{
+    text-decoration:none;
+    color: #ffff;
+    text-transform: capitalize;
+    font-size: 20px;
+    
+}
+.logo
+{
+    float: left;
+    text-transform: capitalize;
+    margin-top: -60px;
+    color: #ffff;
+}
+.navbar nav ul li:hover
+{
+ background-color: #ef8754;
+}
+
+.navbar nav ul .active{
+    display: block;
+    transition: 4s;
+    z-index: 1;
+}
+.header img{
+    width: 100%;
+    height: auto;
+}
+#text,.header-text
+{
+    top: 300px;
+    left: 25%;
+    max-width: 484px;
+    top: 157px;
+}
+.header-text
+{
+    left:25%;
+    top: 180px;
+    max-width: 361px
+}
+/*container*/
+.story{
+    width: 100%;
+    margin-top: 10px;
+}
+.content{
+    width: 108.8%;
+    height: 900px;
+}
+.skill
+{
+    margin-top: -20px;
+    width: 100%;
+}
+.story p
+{
+    margin: auto;
+}
+.skill
+{
+    margin: auto;
+}
+}
+
+@media screen and (max-width:900px){
+    .header img{
+        min-width: 100%;
+        height: 90vh;
+    }
+    #text,.header-text
+    {
+        top: 278px;
+        max-width: 504px;
+        left: 15%;
+    }
+    .header-text
+    {
+        top: 350px;
+    }
+    /*container*/
+.story{
+    width: 96vw;
+    margin-top: 10px;
+}
+.content{
+    width: 100%;
+    height: 900px;
+}
+.skill
+{
+    margin-top: -20px;
+    width: 100%;
+}
+.story p
+{
+    margin: auto;
+}
+.skill
+{
+    margin: auto;
+}
+}
+@media only screen and (max-width:580px){
+    .header img{
+        width: 100%;
+        height: 346px;
+    }
+    #text,.header-text
+    {
+        top: 120px;
+        left: 12%;
+        width: 318px;
+    }
+    .header-text{
+        left: 12%;
+        top: 230px;
+        width: 200px;
+    }
+}
+@media only screen and (max-width:375px){
+    .header img{
+        width:530px;
+    }
+ 
+ 
+}   @media screen and (max-width:600px)
+    {
+        #text{
+            left: initial;
+            margin: 0px 31px
+        }
+        .header-text 
+        {
+            left: initial;
+            margin: 0px 31px
+        }
+    }
+
+
+@media screen and (max-width:467px){
+    .story .container {
+        margin: 10px;
+        padding: 10px;
+    }
+    .story p {
+        font-size: 16px;
+        width: 366px;
+        text-align: center;
+        /* word-spacing: 1.4px; */
+        line-height: 1.8;
+    }
+    .con-list li a
+    {
+        padding: 5px;
+    }
+    .grid-1 img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 500px;
+    transition: 0.5s;
+}
+.grid-1
+{
+    height: 250px;
+}
+}
