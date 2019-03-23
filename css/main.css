@@ -573,7 +573,18 @@ footer .container ul li span
         width: 141%;
     }
 }
+@media screen and (max-width:664px){
+    .con-list
+    {
+        list-style: none;
+        display: flex;
+        flex-grow: 2px;
+    }
+    .con-list li{
+        text-align: center;
+    }
 
+}
 @media screen and (max-width:320px){
     footer{
         width: 117%;
