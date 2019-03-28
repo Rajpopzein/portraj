@@ -444,17 +444,17 @@ footer .container ul li span
 .navbar nav ul{
     display: block;
     width: 100%;
-    background-color: #000;
+    background-color: rgba(243, 243, 243, 0.836);
     margin: 0;
 }
  .navbar nav ul li{
     display: none;
-    padding: 20px;
+    padding: 20 0px;
     width: 100%;
 }
 .navbar nav ul li a{
     text-decoration:none;
-    color: #ffff;
+    color: rgb(7, 7, 7);
     text-transform: capitalize;
     font-size: 20px;
     
@@ -466,10 +466,7 @@ footer .container ul li span
     margin-top: -60px;
     color: #ffff;
 }
-.navbar nav ul li:hover
-{
- background-color: #ef8754;
-}
+
 
 .navbar nav ul .active{
     display: block;

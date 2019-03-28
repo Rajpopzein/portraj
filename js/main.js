@@ -16,7 +16,7 @@ $(document).ready(function () {
             $('.nbr').addClass('black');
             $('.logo').addClass('logo_black');
             $('.navbar nav ul li a').addClass('nav-item_black');
-            $('.toggler').addClass('logo_black')
+            $('.toggler').addClass('logo_black');
         } else {
             $('.nbr').removeClass('black');
             $('.logo').removeClass('logo_black');
