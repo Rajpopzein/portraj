@@ -653,7 +653,7 @@ footer .container ul li span
         }
         .header-text 
         {
-            left: initial;
+            left: initial !important;
             margin: 0px 31px
         }
     }
@@ -783,7 +783,7 @@ footer .container ul li span
 @media screen and (max-width:967px){
     #text, .header-text
     {
-        left: 20%;
+        left: initial;
     }
 }
 
