@@ -14,8 +14,12 @@ $(document).ready(function(){
     $(window).on('scroll',function(){
         if($(window).scrollTop()){
             $('.nbr').addClass('black');
+            $('.logo').addClass('logo_black');
+            $('.navbar nav ul li a').addClass('nav-item_black');
         }else{
             $('.nbr').removeClass('black');
+            $('.logo').removeClass('logo_black');
+            $('.navbar nav ul li a').removeClass('nav-item_black');
         }
     })
     //scroll 

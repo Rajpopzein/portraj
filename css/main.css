@@ -19,6 +19,10 @@ body{
     position: fixed;
     z-index: 1;
 }
+.nbr
+{
+    transition: 2ms;
+}
 .navbar nav ul{
     list-style: none;
     float: right;
@@ -31,7 +35,9 @@ body{
     text-decoration:none;
     color: #ffff;
     text-transform: capitalize;
-    font-size: 20px;
+    font-size: 18px;    
+    font-family: 'roboto',sans-serif;
+
 
 }
 
@@ -40,7 +46,10 @@ body{
     float: left;
     text-transform: capitalize;
     margin-left: 20px;
+    margin-top: -9px;
+    font-size: 18px;
     color: #ffff;
+    font-family: 'roboto',sans-serif !important;
 
 }
 .navbar nav ul li a:hover{
@@ -85,10 +94,23 @@ body{
     width: 100%;
     height: 60px;
 }
-.black
+.black 
 {
-    background-color: rgba(0, 0, 0, 0.644);
+    background-color: rgba(243, 243, 243, 0.719);
+    transition: 1.4s;
 }
+.logo_black
+{
+    color: rgb(24, 24, 24);
+    transition: 1.5s;
+}
+.nav-item_black
+{
+    color: rgb(24, 24, 24) !important;
+    transition: 1.5s;
+    margin-bottom: -5px;
+}
+
 
 
 /*content section*/
@@ -201,6 +223,72 @@ body{
 .story,.skill{
     margin-top: 80px;
 }
+/*what i offer */
+    .what-i-offer
+    {
+        width: 100%;
+        height:500px;
+        background-color: rgba(243, 243, 243, 0.719);
+        margin-bottom: 200px;
+   
+         
+    }
+    .what-i-offer .container{
+        padding: 10px 40px;
+        position: relative;
+        overflow: hidden;
+    }
+    .what-i-offer h2{
+        font-family: 'roboto',sans-serif;
+        font-size: 35px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50% ,0%); 
+        text-transform: uppercase;       
+    }
+    .what-i-offer ul
+    {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        
+        
+    }
+    .what-i-offer  ul li{
+        color: #000;
+        width: auto;
+        margin-top: 80px;
+        padding: auto !important;
+    }
+    .what-i-offer .con-list ul li p{
+        font-size: 40px;
+    }
+     .offer-icon{
+        font-size: 50px;
+        text-align: center;
+    }
+    .offer-list ul li
+    {
+        padding: 8.65%;
+        text-align: center;
+        text-transform: capitalize;
+        font-family: 'roboto',sans-serif;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*portfolio content*/
@@ -324,6 +412,21 @@ footer .container ul li span
     font-size: 20px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*media query*/
 @media only screen and (max-width:768px){
  .toggler{
@@ -433,6 +536,16 @@ footer .container ul li span
 }
 }
 
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:900px){
     .header img{
         min-width: 100%;
@@ -470,7 +583,19 @@ footer .container ul li span
 {
     margin: auto;
 }
+.offer-list ul li {
+    padding: auto;
 }
+}
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width:580px){
     .header img{
         width: 100%;
@@ -479,7 +604,7 @@ footer .container ul li span
     #text,.header-text
     {
         top: 120px;
-        left: 12%;
+        left: 0% !important;
         width: 318px;
     }
     .header-text{
@@ -493,13 +618,32 @@ footer .container ul li span
         margin-left: -15px;
     }
 }
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width:375px){
     .header img{
         width:530px;
     }
  
  
-}   @media screen and (max-width:600px)
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:600px)
     {
         #text{
             left: initial;
@@ -511,6 +655,14 @@ footer .container ul li span
             margin: 0px 31px
         }
     }
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width:467px){
@@ -548,6 +700,16 @@ footer .container ul li span
     margin-left: -15px;
 }
 }
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:425px){
     .skillbar-section {
         margin-left: 0;
@@ -563,13 +725,30 @@ footer .container ul li span
         flex-direction: column;
         margin-left: -15px;
     }
+    .what-i-offer .container h2 {
+        text-align: center;
+        width: 100%;
 }
+}
+
+@media screen and (max-width:663px)
+{
+    .offer-list ul li {
+        padding: auto;
+    }
+}
+
 @media screen and (max-width:768px){
     .skillbar-section {
         margin-left: 75px;
     }
 
+  
 }
+
+
+
+
 @media screen and (max-width:375px){
     .story {
         width: 96vw;
@@ -597,6 +776,17 @@ footer .container ul li span
         width: 141%;
     }
 }
+
+
+@media screen and (max-width:967px){
+    #text, .header-text
+    {
+        left: 20%;
+    }
+}
+
+
+
 @media screen and (max-width:664px){
     .con-list
     {
@@ -609,6 +799,12 @@ footer .container ul li span
     }
 
 }
+
+
+
+
+
+
 @media screen and (max-width:320px){
     footer{
         width: 117%;
