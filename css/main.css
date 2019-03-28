@@ -96,12 +96,12 @@ body{
 }
 .black 
 {
-    background-color: rgba(243, 243, 243, 0.719);
+    background-color: rgba(243, 243, 243, 0.836);
     transition: 1.4s;
 }
 .logo_black
 {
-    color: rgb(24, 24, 24);
+    color: rgb(24, 24, 24) !important;
     transition: 1.5s;
 }
 .nav-item_black
